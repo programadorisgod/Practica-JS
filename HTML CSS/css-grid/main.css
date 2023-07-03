@@ -1,0 +1,23 @@
+
+.Container{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap:  1em;
+   grid-auto-rows: minmax(100px, auto);
+
+    justify-content: center;
+
+
+} 
+
+ 
+.Container div{ 
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+.Container div:hover{
+
+    border: 1px solid #f1c40f;
+
+}

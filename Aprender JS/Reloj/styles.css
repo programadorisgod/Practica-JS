@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: #040814;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#reloj {
+  background-color: #0098d5;
+  width: 700px;
+  height: 200px;
+  margin-top: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#hora {
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#fecha {
+  color: #fff;
+  font-size: 1.7em;
+  font-family: "Poppins", sans-serif;
+}

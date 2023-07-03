@@ -1,0 +1,32 @@
+
+.container {
+    padding: 20px 5px;
+    background: #fff;
+    filter: contrast(30);
+}
+
+.caja {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.caja:first-child{
+    animation: trasladar 2s alternate infinite;
+
+}
+
+
+@keyframes trasladar {
+    0% {
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+}
+

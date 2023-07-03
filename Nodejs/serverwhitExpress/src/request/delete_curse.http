@@ -1,0 +1,1 @@
+DELETE   http://localhost:3000/api/cursos/programacion/100  HTTP/1.1

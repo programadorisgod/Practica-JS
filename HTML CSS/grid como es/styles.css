@@ -1,0 +1,45 @@
+.contenedor {
+    width: 98%;
+    height: 900px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+
+    display: grid;
+ grid-template-areas: 
+ "area1 area1 area1 area2"
+ "area1 area1 area1 area3"
+ "area4 area4 area5 area6"
+ "area7 area7 area7 area7";
+}
+
+.items-1 {
+    grid-area: area7;
+    background-color: #6255BF;
+    
+}
+
+.items-2 {
+    background-color: purple;
+    grid-area: area1;
+}
+
+.items-3 {
+    background-color:orange;
+    grid-area: area3;
+}
+
+.items-4{
+  background-color: #181768;
+  grid-area: area5;
+}
+
+.items-5{
+    background-color: green;
+    grid-area: area4;
+}
+
+.items-6{
+    background-color: red;
+    grid-area: area6;
+}

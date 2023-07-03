@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Controla tus finanzas</title>
+  </head>
+  <body id="body">
+    <div class="cabecero">
+      <div class="presupuesto">
+        <div class="presupuesto_valor" id="presupuesto">+</div>
+        <div class="presupuesto_ingreso limpiarEstilos">
+          <div class="presupuesto_ingreso--texto">Ingresos</div>
+          <div class="derecha">
+            <div class="presupuesto_ingreso--valor" id="ingresos"></div>
+            <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+          </div>
+        </div>
+        <div class="presupuesto_egreso limpiarEstilos">
+          <div class="presupuesto_egreso--texto">Egresos</div>
+          <div class="derecha limpiarEstilos">
+            <div class="presupuesto_egreso--valor" id="egresos"></div>
+            <div class="presupuesto_egreso--porcentaje" id="porcentaje">
+              45%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="" id="forma" onsubmit="return false;">
+      <div class="agregar">
+        <div class="agregar_contenedor">
+           <select name="" id="tipo" class="agregar_tipo">
+            <option value="ingreso" selected>+</option>
+            <option value="egreso" selected>-</option>
+           </select>
+           <input type="text" class="agregar_descripcion" placeholder="Agregar Descripcion" id="descripcion"/>
+           <input type="number" class="agregar_valor" placeholder="Agregar valor" id="valor" step="any"/>
+           <button class="agregar_btn" id="agregarDato">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+           </button>
+          
+        </div>
+      </div>
+    </form>
+
+
+
+    <div class="contenedor limpiarEstilos">
+      <div class="ingreso">
+        <h2 class="ingreso_titulo">INGRESOS</h2>
+        <div id="lista-ingresos"></div>
+      </div>
+      <div class="egreso">
+        <h2 class="egreso_titulo">Egresos</h2>
+        <div id="lista-egresos"></div>
+      </div>
+    </div>
+
+    <script src="/JS/Dato.js"></script>
+    <script src="/JS/Ingreso.js"></script>
+    <script src="/JS/Egreso.js"></script>
+    <script src="/JS/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

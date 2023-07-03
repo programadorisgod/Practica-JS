@@ -1,0 +1,63 @@
+GIT = Toma como fotos al codigo.
+-Interactua con el sistema Operativo.
+
+3 estados: 
+Working directory
+staging area
+repository
+
+COMANDO BASICOS:
+git init
+git add <file>
+git status = ver archivos que estamos trabajando.
+git commit
+git push = subirlo a un repositorio remoto
+git pull = traer cambio
+git clone = una copia  
+
+
+
+cd para acceder a directorios.
+ls para mostrar los archivos.
+para carpetas ' '
+
+
+pwd = ver directorios
+para volver un cambio, es git checkout --nombre del archivo para volver un cambio.
+ver las diferencias = git diff nombre archivo.
+
+--Moverme entre ramas= git checkout <nombre rama>
+--crear ramas = git branch <nombre de la rama>
+
+----devolver cambios.
+git resotre --staged <nombre archivo>
+
+-----descartar cambios
+git restore <nombre archivo>
+
+--deshacer commit  guardando cambios :
+
+git reset --soft HEAD~1
+
+Con el comando reset hacemos que la rama actual retroceda a la revisión que le indicamos. En este caso le decimos HEAD~1 que significa: queremos volver a la versión inmediatamente anterior a la que estamos ahora.
+
+El parámetro --soft es el que va a hacer que los cambios que habíamos hecho en el commit, en lugar de eliminarlos, nos los mantenga como cambios locales en nuestro repositorio.
+
+
+Si NO quieres mantener los cambios:
+git reset --hard HEAD~1
+
+
+
+----Si quieres arreglar el último commit (y no has hecho push)----
+git commit --amend -m "Este es el mensaje correcto"
+
+--------Deshacer un commit (ya publicado)-------------
+git revert 74a1092
+
+----------------------
+git init
+git add
+git comit
+git remote add origin <link>
+git push -u origin master

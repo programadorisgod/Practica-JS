@@ -1,0 +1,137 @@
+/*Inicio resetando todos los styles de la pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Darle estilos al body*/
+body {
+    background: #1D202B;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor {
+    /*le doy al div un 90%, para que no ocupe todo el ancho de la pagina*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    /*arriba, derecha*/
+    padding: 40px 0; 
+    display: grid;
+    /*asi tengo 2 columnas que ocupan el 100%*/
+    grid-template-columns: 1fr 1fr; 
+    /*separar el banner;*/
+    gap: 20px;
+   
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+
+
+}
+
+.contenedor-conciertos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     /*Para darle el espacio que necesitamos*/
+    gap: 20px;
+   
+}
+
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .textos {
+    /*Le estoy diciendo que lo que haré es los textos dentro del contenedor card*/
+    /*Le voy a dar un alto del 100% para que se puedan acomodar.*/
+    height: 100%;
+
+    /*centrar y dar espaciado a los textos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner {
+     /*quiero unos bordes redondos, pero no mucho*/
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner ul {
+    list-style: none;
+}
+
+.banner ul li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.banner .boton {
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 768px) {
+    .header{
+        text-align: center;
+    }
+     .container{
+        grid-column: 1/-1;
+     }
+     .contenedor-conciertos{
+        grid-column: 1/-1;
+     }
+     .banner{
+        grid-column: 1/-1;
+     }
+   
+}
+
+@media only screen and (max-width: 600px) {
+   
+     .container{
+        grid-column: 1/-1;
+     }
+     .contenedor-conciertos{
+        grid-column: 1/-1;
+     }
+     
+     .banner{
+        grid-column: 1/-1;
+     }
+   
+  }

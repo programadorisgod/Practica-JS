@@ -1,0 +1,85 @@
+/*const names =['jerson', 'Kaddir', 'Manuel','jose','juan'];
+
+const NewNames = names.map((name) =>{
+  return `hola ${name}`;
+});
+
+console.log(NewNames);
+
+
+const newFound = names.filter((name) =>  name === 'jose');
+
+console.log(newFound);
+
+const vector = names.concat(newFound)
+
+console.log(vector)
+
+
+/*students.forEach((student) => console.log(student.name +' '+  student.lastname))
+
+
+
+const VECTOR =students.map(student => ({
+  
+   ...student, 
+   name:'programming'
+    
+}))
+
+console.log(VECTOR);
+                           
+
+
+
+const vector  = students.filter(studen => studen.age >= 18)
+
+console.log(vector)*/
+/* const TOTAL = students.reduce((total, student) => total + student.age,0)
+console.log(TOTAL)
+
+
+
+const Result = developers.reduce((allSkills, developer) => Array.from(new Set([...allSkills, ...developer.skill])) ,[])
+console.log(Result);*/
+
+const students = [
+  { name: "jil", lastname: "pedro", age: 25 },
+  { name: "pedro", lastname: "manuel", age: 15 },
+  { name: "julio", lastname: "ricardo", age: 19 },
+];
+const developers = [
+  {
+    id: 1,
+    name: "jhon",
+    skill: ["HTML", "React", "JavasScript", "Java"],
+  },
+  {
+    id: 2,
+    name: "Jane",
+    skill: ["HTML", "CSS", "JavasScript", "React", "Redux", "NodeJS"],
+  },
+  {
+    id: 3,
+    name: "Jack",
+    skill: ["HTML", "CSS", "JavasScript", "React", "Redux", "NodeJS"],
+  },
+];
+
+students.sort((firts,second) => firts.age - second.age)
+
+students.find((student) => student.age === 25 )
+
+
+students.some(student => student.age > 15)
+
+students.every(student => student.age > 25)
+
+
+
+
+
+
+
+
+

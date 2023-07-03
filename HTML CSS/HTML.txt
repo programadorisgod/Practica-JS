@@ -1,0 +1,91 @@
+----------HTML----------
+<etiqueta 'atributo' = "valor">
+br= Espacio en linea.
+h1 - h6= Para titulos. No poner más de un h1, ya que este lo que hace es posicionar. 
+<em> 
+<strong>
+<!DOCTYPE html> = indica que es la ultima version de HTML.
+<html>= contiene todo.     
+<head> = todo lo que no vemos.
+<body>= todo lo que vemos.
+<title> = titulo.
+<p> = Para parrafos.
+<b> = Para negrita.
+<i> = italica o sea inclinada.
+<strike> = Tachada.
+<small> = letra pequeña.
+<a> = Para redirigir, a otro lugar. // href = a donde quiere llevarlo.
+Volver una carpeta para atras = ../
+ir a una carpeta = namecarpeta/elemento.
+<target> = a que le vamos a apuntar o sea otra pestaña o algo asi
+<article> = mostrar articulos,.
+<section>
+<center> = centra todo el contenido.
+id= identificar el elemento.
+<link rel= "icon" href=".ico">
+----------LISTAS-----------
+Desordenadas <ul>
+<li> = elementos de las LISTAS.
+
+Ordenadas 
+<ol> = Enumerar.
+
+------------MULTIMEDIAS----------
+Mostrar imagenes: <img src="ruta" alt = "Define como un titulo" title="Titulo de la imagen">
+Mostrar video: <video src = "ruta">
+mostrar audio : <audio src = "ruta" controls> 
+
+-----------DIVS-----------
+<DIV> = separar contenidos.
+
+----FORMULARIOS-----
+<form> </form>
+<input type="" name ""> = Entradas.  required = llenar al menos ese campo, para poder enviar.
+FORMATOS:
+password
+number
+email
+color
+range (min - max)
+date 
+time
+button (value)
+submit 
+textarea (readonly)
+
+PROPIEDAD DE VALOR : 
+value
+
+placeholder: lo que va a dentro del input;
+
+----------META DATOS----------
+sirven para describir informacion.
+<meta> Va en el HEAD.
+<meta name="keywords"  content="Palabras claves">
+<meta name="description"  content="describir">
+<meta name="author" content="Nombre autor"
+<meta name="copyright" content="Nombre empresa"
+<meta name="robots" content="index o noindex">Es para decirle a la pagina, si tiene que ser indexada o no.
+
+---------HTML SEMANTICO---------
+O sea de forma legible.
+Estructura:
+HEADER
+-NAV (barra de navegacion).
+<FOOTER> (PIE DE PAGINA).
+<ASIDE> = va al costado.
+-----------COMO CONSTRUIR UNA BARRA DE NAVEGACION----------
+<header>
+<nav>
+  <ul>
+  <li>
+   <a></a>
+  </li>
+   </ul>
+</nav>
+</header>
+----------TABLAS--------------
+<table>
+  <tr> </tr> = definir las filas.
+   <td> </td> = campos por fila.
+</table>

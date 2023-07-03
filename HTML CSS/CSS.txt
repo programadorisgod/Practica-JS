@@ -1,0 +1,596 @@
+---------CSS------------
+Enlazar CSS con HTML.
+<link rel="stylesheet" type = "text/css" href="style.css">
+
+-------------ESTRUCTURA------------------------
+
+selector {
+    propiedad : valor;
+}
+
+
+-----------------------------------tipo de selectores:----------------------
+-
+-Universal = *
+
+-De tipo = Por el nombre del elemento.
+
+-Clases= .nombre de la clase. (html atributo = class = "nombre clase")
+
+-ID = #nombreid
+
+-Por atributo= nombredel atributo="valor". [atributo= "valor"]
+
+-Descendientes= de lo grande a lo pequeño. se escribe el principal y luego el que entra ejemplo. div .title (div h1);
+
+-Selector de hermano siguiente: .clase + (lo que quiero seleccionar). 
+
+para seleccionar todos los hermanos siguientes= .clase ~ algr+4.
+
+-Selector de hijo siguiente: .clase contenedora o padre >  hijo
+
+-Pseudo-clases.
+
+-------------------------------------ESPECIFICIDAD--------------------------------
+El navegador suma los valores y el que tenga el mayor valor, gana por decirlo asi.
+etiquetas y pseudoelementos: 001
+clases, atributos y psuedoclases 010
+Ids: 100
+estilos en line: 1000
+
+------------------------------------------------------------------------
+
+----------------NORAMALIZAR ESTILOS DEL NAVEGAGOR--------------------
+
+usar el archivo normalice.css
+
+-------------------------------------------------------------------
+
+----------------------METODOLOGIA DE BEM---------------------------
+
+
+Son como clases y llamas al metodo.
+
+------------------------------------------
+
+
+-----------------------Widht y Height--------------------
+Con width, damos el largo al elemento.
+Con height, le damos un largo.
+
+**Pero lo elementos en linea son diferente***
+No tienen ni width ni height.
+--------------------------------------------------------
+
+-------------------------Margin--------------------------
+
+Solo para elemetos en bloque: 
+DEBEMOS TENER EL ELEMENTO CON UN ANCHO ESTABLECIDOOOOO...
+
+Nos permite generar espacio entre elementos.
+Los 4 lados posibles para dar margin.
+
+margin-top: Margen superior
+margin-right: Margen derecho
+margin-bottom: Margen inferior
+margin-left: margen izquierdo.
+
+4 valores -- Margin:top right bottom left;
+3 valores -- margin: top left / righr bottom;
+2 valores -- margin: top/bottom left/right;
+1 valor -- margin: top/right/bottom/left;
+
+*****Para los elementos en linea, solo sirve para los lados*****
+O sea horizontales.
+
+
+
+
+--------------------------------------------------------------------------
+
+--------------------------PADDING-----------------------------------------------
+si quiero aumentar el tamaño de la caja y separar el contenido de los bordes.
+Nos permite generar espacio INTERNO entre el elemnto y el borde del elemento.
+Los 4 lados posibles para dar padding.
+
+padding-top: Margen superior
+padding-right: Margen derecho
+padding-bottom: Margen inferior
+padding-left: margen izquierdo.
+
+4 valores -- padding:top right bottom left;
+3 valores -- padding: top left / righr bottom;
+2 valores -- padding: top/bottom left/right;
+1 valor --   padding: top/right/bottom/left;
+
+---------------------------------------------------------------------------
+
+
+--------------------------------BORDER------------------------------------
+Modificar la propiedad de la caja.
+ 
+border-widht: ancho del borde
+border-top-widht
+border-right-widht
+border-bottom-widht
+border-left-widht
+
+border-bottom-widht
+border-left-widht
+
+border-style: estilo del borde
+
+border-top-style
+border-right-style
+border-bottom-style
+border-left-style
+
+Listado de valores de style:
+none
+hidden
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+ouset
+
+border-color: Color del borde
+border-top-color
+border-right-color
+border-bottom-color
+border-left-color
+
+
+
+border: width style  color;
+
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------MALAS PRACTICAS--------------------------------------------
+
+No usar margin 0 y padding 0.
+No centrar con Margin
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------Unidades de medida------------------------------------------
+
+Relativas.
+Fijas.
+
+Relativas: 
+
+vh= viewport(pantalla visible). height  o sea el ancho 
+vw= viewport widht o sea el ancho
+
+
+FIjas:  
+
+font-size: tamaño de la letra(cambiar)
+
+EM = Corresponde a la medida de la "m" del contexto dnde nos encontremos.
+
+REM:Corresponde a la medida "m" de la raiz del documento (html). 16 px. y eso se multiplica por el valor que colocas.
+para tamaños de fuente usar REM.
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------PARA LOS NAV------------------------------------
+
+Colocar margin 0, para que si llegue a todos los lados.
+------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------Propiedades de texto-------------------------------------
+
+font-size: tamaño de la letra(cambiar)
+font-family = tipografia
+line-height = el espacio total que ocupa.
+font-weight = grosor. 
+text-aling = center paracentrar
+
+--------------------------------------------------------------------------------------------------------------
+ajustar imagenes en movil 
+max-width = 100%;
+box-sizing: border-box ; (mantenga el tamaño que es).
+
+--------------------------------CAMBIAR COMPORTAMIENTO DE CAJAS----------------------------------------------------
+
+Display: block o 
+inline (uno al lado del otro).
+----------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------PROPIEDADES DE CAJAS------------------------------------
+
+Padding: Crear un espacio al rededor de un elemento, pero propio, como si lo impulsara hacia adentro.
+padding = relleno.
+padding left = relleno entre el texto y el borde izq
+padding top = relleno entre el texto y los bordes superiores de la CAJAS
+padding rigth = relleno entre el texto y el borde derecho
+padding bottom = relleno entre el texto y los bordes inferior de la CAJAS
+------------------------------------------------------------------------------------------------------------  
+------------------------(centrar contenido del texto)------------------------
+text-aling : center;
+--------------------------------------------------------------------------------
+
+-----------------------------------------MARGIN--------------------------------------
+ (Distancia entre las CAJAS o crear espacio entre los elementos del html).
+------------------------------------------------------------------------------------
+
+BOX-SIZING: BORDER-BOX; (incluye, padding y border, para medir los elementos).
+BORDER-RADIUS (redondear los bordes)
+BORDER: tamaño estilo color   (BORDER: 4PX DASHED BLUE)
+ESTILLOS: solid, dashed, double, groove, inset, outset, ridge.
+
+BOX MODEL: Modelo en el que se trabajan las cajas. 
+BOX-SHADOW: Sombra a la caja
+box-shadow : x y tamaño sombra cuanto borde  color (box-shadow: 2px 4px 10px 3px blue)
+TEXT-SHADOW : lo mismo, pero para el texto.
+
+
+TRANSFORM: ROTATE (VALORdeg)
+
+-----------------------Outline:---------------------------------------------------------------
+ Da borde, sin afectar a todos. 
+-----------------------------------------------------
+
+---------------------------Position--------------------
+
+posicionar el elemento. Afectar el fljuo de HTML. 
+
+position relative: para que los elementos vayan debajo de su posicion relativa, mas no donde esta.
+
+position absolute: Para que el elemento se salte el flujo y se coloque en el inicio de todo.
+
+si se combinan las dos, solo puede saltarse hasta el padre.
+
+adquiere 4 propiedades nuevas.
+-top: arriba  (importante) 
+-Left: izq     (importante)
+-rigth : dercha
+-bottom: abajo
+
+_______________________________________
+-Relative:  conserva su espacio.
+
+Z-INDEX: Colocar un elemento encima de otro. Los ordena dependiendo del que tenga el valor
+más alto en el eje Z. (solo si la caja está posicionada).
+
+-ABSOLUTE: 
+-Opacity = la transparencia, numeros entre 0 y 1.
+
+-FIXED: Queda fijado.   
+
+
+----------------------------------------DISPLAY---------------------------------------------
+
+Modifica el COMPORTAMIENTO entre las cajas.
+  
+-------------------------------------------------------------------------------------------------------
+
+--------------------------Los margenes verticales colapsan--------------------------------------------
+Para separar, empujamos al otro, le damos el margin bottom, al que esta arriba;
+margin-top (para solucionar entre padres e hijos  //https://www.youtube.com/watch?v=t53-d5wMwFc&list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z&index=30&ab_channel=DorianDesings )
+--------------------------------------------------------------------------------------------------------
+
+---------------------------------------------OVERFLOW-------------------------------------------------
+
+EL SCROLL
+-auto
+-scroll
+-hiiden (quita)
+
+---------------------------------------------------------------------------------------------------
+
+-------------------------------------------------Outline--------------------------------------------
+Este no ocupa sitio, ya que no forma parte del box-model
+No se puede redondear
+No se pueden controlar los lados de forma independiente.
+
+
+Otline-offset, que nos permite aumentar o disminuir la distancia del outline respecto a la caja que 
+perteneces
+-----------------------------------------------------------------------------------------------------
+
+---------------------------------BOX SIZING----------------------------------------------------------------------------
+Es el qe controla como el tamaño de las cajas, para hacer los calculos y todo eso.(Para respetar el tamaño).
+Inicia a contar desde el border, padding y  conten.
+border-box = Calculo de tamaño del elemento incluyendo el padding y el border.
+-----------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------Box Shadow----------------------------------------
+Practicamente, lo que hace es clonar la caja, pero respetando el box model.
+
+Valores:
+offset-x = Desplazamiento en x (OBLIGATORIO)
+
+offset-y = Desplazamiento en y (OBLIGATORIO)
+
+blur-radius: desenfoque de la sombra.
+
+spread-radius= Expansaion de la sombra.
+
+color = el color de la sombra, si no se especifica, entonces tomara el que tenga la caja.
+
+inset = es para determinar si la sombra es interior o exterior.
+
+box-shadow: valor x  valor y  blur color tamaño de la sombra
+
+--------------------------------------------------------------------------------------------
+
+-------------------------------------¿Qué es position?-----------------------------------------
+Permite posicionar los elementos.
+
+
+Flujo renderizado = los elementos van de izquierda a derecha y de arriba abajo. por norma general se van a la esquina 
+superior izquierda.
+
+Espacio reservado = Es el espacio que le da el navegador al elemento.
+
+Elemento posicionado= Esto significa que el elemento tiene la propiedad postion con un valor distinto de "static".
+
+Stackin contex = Contexto de apilamiento. Es el orden en el que se apilaran las cajas que se superponen dentro del mismo
+contenedor.
+
+
+Al posicionar un elemento se habilitan 5 propiedades que podemos utilizar para mover los elementos en los 3 ejes.
+
+top= El elemento se movera desde la parte superior a la distancia que le digamos.
+
+right =  El elemento se movera desde la parte derecha a la distancia que le digamos.
+
+left = El elemento se movera desde la parte izquierda a la distancia que le digamos.
+
+Z-index = Mover elemento en el contexto de apilamiento (la profundidad).
+
+
+
+
+RELATIVE: Mantiene su tamaño y comportamiento.
+
+ABSOLUTE: Pierde sus medidas y espacio reservado.
+
+
+Position Fixed: similar al absolute, solo que el elemento se quedará fijo, aunque hagamos scroll.
+
+Position sticky: hace scroll, hasta que se acabe el tamaño
+
+
+------------------------------------------------------------------------------------------------
+
+------------------------------------------Z-INDEX---------------------------------------
+
+SI DOS ELEMENTOS, ESTAN POSICIONADOS, EL ORDEN QUE PREVALECE ES EL DEL HTML.
+
+
+-----------------------------------------------------------------------------------------------
+
+---------------------------------------------STACKING CONTEXT----------------------------------------
+
+El contexto de apilamiento es el espacio donde nuestros elementos para que cuando se apilen queden unos por delante
+y otro por detras.
+
+Su orden es delante a tras.
+Posicionados con un Z-index de 1 o más.
+Elemetos posicionados sin z-index o auto.
+Elementos no posicionados
+Elementos con Z-index negativo.
+
+
+
+------------------------------------------------------------------------------------------------------
+
+----------------------------------COMO ORDENAR LAS PROPIEDADES---------------------------------------
+1 -Propiedades de posicionamiento
+
+2- Propiedades del box model
+
+3- Propiedades de texto
+
+4- Propiedades visuales (colores, bordes, background...)
+
+5- El resto
+
+
+-----------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------
+
+-------------------------Pseudoelementos(No forman parte del DOM.)--------------------------
+
+Esto si forma parte del DOM.
+::first-line   |funciona para elemento de bloque. Toma a la primera linea sin importar que pueda cambiar de tamaño.
+::first-letter |Toma la primera letra.
+::placeholder (lo que va dentro del input)
+::selection (La seleccion)
+
+No forman parte del DOM
+Necesitan la propiedad content
+::after  | Hijos del elemento al cual se le aplica.
+::before
+--------------------------------------------------------------------------------------------
+
+--------------------------------------Pseudoclases------------------------------------------
+Escuchar elementos. 
+Hover : Cuando coloco el mouse por encima.
+link : si no esta visitado el enlace.
+lang : Para lenguajes, se especifica en el html y el css.
+--------------------------------------------------------------------------------------------
+
+------------------------------------------Object-Fit----------------------------------------
+
+object-fit: contain; Por defecto, resolciones se ajusten al contenido
+
+object-fit: cover; Recorta los demas bordes.   
+
+object-fit: none; Se queda con la que más le conviene.
+
+object-fit: sacale-down;  se queda con la que mjor le conviene.
+
+object.Position: Tiene la misma que outlin
+
+--------------------------------------------------------------------------------------------
+
+----------------------------------------------CURSORES--------------------------------------
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor
+
+--------------------------------------------------------------------------------------------
+
+-----------------------------------------RESPONSIVEEEE--------------------------------------
+FLEXBOX: Organizar elementos en 1 sola dimension  y sirve para aliniar elementos.
+Display: flex; Se ajustan al contenedor // coloca los elementos uno al lado del otro, verticalment.
+
+flex-direction : columm (queda un elemento al lado del otro).
+flex-wrap : wrap.  (Para mantener el tamaño. si los elementos no caben, van debajo.)
+
+DAR ESPACIADO TEXTO: colocar un alto del 100%
+                     (display: flex;
+                      flex-direction: column;
+                     justify-content: space-between)
+
+Flex-flow: lleva a las dos anteriores.
+
+Centrar el contenido.
+
+justify-content: center (para centrar)
+space-arround
+space-between
+space-evenly
+
+
+Align-items: flex-start 
+Align-items: center (centrar verticalmente)
+Align-items: flex-end
+Align-items: baseline 
+Align-items: strech
+
+
+flex-grow: resparte el espacio que queda entre las cajas.
+flex-basis.
+flex-shrink: cuanto de espacio va a ceder cada uno
+
+--------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------GRID---------------------------------------------
+Sirve para organizar elementos en 2 dimensiones. PARA DAR ESTRUCTURA  Y ESPACIADO DE CAJAS. 
+
+display: grid;
+grid-template-colums: establecer las columnas que quiero.
+repeat (#columnas, fracciones)
+ grid-template-rows: (espaciado)g200px 400px;
+agregar espaciado: 
+gap= px, em etc... espaciado de columnas y filas
+filas = row-gap
+columns-gap  
+tambien lo puedo dividir en fracciones con la palabra fr.
+Repeat = es para repetir algo que quiero ver || Repeat(cuatas veces lo quiero repetir, medida);
+grid-auto-rows: para establecer espaciado
+ajustar elementos = justify-items: abarca el tamaño que ocupa.
+VERTICALMENTE
+aling-items: center, start, end.
+
+w3schools.com
+
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------TRANSICIONES------------------------------------
+  transition-property: las propiedades que queremos que tenga transicion
+  transition-duration: tiempo en el que tardara para cambiar la transicion
+  transition-delay: con retraso
+  transition-timing-function: cambio en funcion del tiempo.
+
+ (marcar por linea .caja:nth-child(1) )
+
+heredar: inherit;
+
+
+-----------------------------------------ANIMACIONES-------------------------------------
+   animation-timing-function:como se va a desplazar la caja;
+ animation-name: desplazarse;  ( para ello debo usar @keyframe) 
+ejem:
+
+@keyframes desplazarse {
+    0%{
+       
+        left: 0;
+        background:#025;
+    }
+    50%{
+        background: red;
+    }
+    100%{
+        left: 80%;
+        background: green;
+    }
+}
+
+y le digo cuanto va a durar: 
+   animation-duration: 3s; 
+
+----------------------------------------------------------------------------------------
+
+-------------------------------------------TRANFORM------------------------------------
+transfor: translateX(px) nos traslada los pixeles que necesitamos.
+
+-------------------------------------------------------------------------------------
+
+---------------------Clip path generator en google------------
+
+
+--------------------------------------------BACKGROUND-------------------------------------------
+background-color: color
+background-imgae: url()
+background-size: x,y,auto,cover,contain
+background-position: left - top - bottom - right - center ++ left - top - bottom - right - center
+background-attachment: scroll | fixed | inherit
+background-clip: border-box | padding-box | content-box
+background-orgin - origen del a foto (valores arriba)
+
+La imagen de fondo representa al tamaño especificado.
+si el background-size es contain o cover :
+ La imagen es renderizada, preservando su proporción propia, 
+en el tamaño mayor contenido dentro de, o cubriendo, el área de posicionamiento de fondo.
+PRACTICAMENTE, MANTIENE EL TAMAÑO EN DONDE ESTA
+--------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------VARIABLES------------------------------------
+:root{
+--nombre
+}
+para llamarla var(--nombre)
+
+
+----------------------------------------------------------------------------------------------------
+
+
+dar espacio a las letras: LETTER-SPACING
+user-selectect: no poder seleccionar.
+
+
+
+
+La propiedad font-weight de CSS especifica el peso o grueso de la letra. 
+Algunos tipos de letra sólo están disponibles en normal y bold 
+
+
+width: fit-content: el tamaño sera solo el del contenido
+perpectiva.
+
+
+
+DIFERENCIA ENTRE MAX-WIDHT Y MIN-widht
+    uno es para aplicar el maximo px y el otro el minimo de px
+
+
+
+si dos elementos estan al mismo nivel, son hermanos.
+si estan dentro del otro son hijos.
+    
+
+ border-top-left-radius: 50px  100px;
+    border-radius: 50px  100px;

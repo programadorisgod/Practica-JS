@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+   
+}
+
+.contenedor1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://cutwin.com/cloud_theme/build/img/header.jpg");
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+.nav {
+    display: flex;
+    width: 750px;
+    padding: 30px 0;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    color: #fff;
+    font-family: "Popins", sans-serif;
+    letter-spacing: 3px;
+}
+i{
+    transition: all 0.5s ease;
+}
+
+i:hover{
+    color: blue;
+    box-shadow: 10px 10px 20px #003581;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Popins", sans-serif;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.nav-list a:focus, a:hover{
+    background-size: 100% 2px;
+}
+
+.img {
+    height: 70px;
+    float: left;
+}
+
+.img img {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 0 0 15px;
+    margin-left: 40px;
+}
+
+.shorten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: "Poppins";
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.shorten h1 {
+    font-size: 40px;
+    margin: 20;
+   
+}
+
+.shorten h1 {
+    font-size: 60px;
+    margin: 0 0 40px;
+}
+
+.shorten h2 {
+    font-size: 0 0 0 25px;
+  
+}
+
+input {
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 19px;
+    height: 50px;
+    width: 555px;
+    border: none;
+    padding: 20px;
+    position: relative;
+}
+ input::placeholder{
+    color: #fff;
+ }
+
+input:focus {
+    outline: none;
+    color: #fff;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top:7px;
+}
+
+
+
+.form-group {
+    position: relative;
+}
+
+.img2{
+    position: absolute;
+    bottom: 0;
+   width: 100%;
+   
+}
+

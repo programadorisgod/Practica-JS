@@ -1,0 +1,156 @@
+Tipos de datos en JS:
+String, number, booleano. Undefined, Null, Nan(No es un numero), BigInt, symbol;
+
+Declarar variable:
+let: limita el alcance.
+const:No cambia :v.
+
+--------------------------------------------------------Operadores:------------------------------------
+Asigancion:
+adiccion: +=
+sustracion: -=
+multiplicacion: *=
+division: /=
+exponenciacion x**=
+desplazar iz <<=
+desplazar derc >>=
+sin singo desplazar derc >>>= 
+AND; &=
+xOR ^=
+OR |=
+
+Template Strings y Backticks
+`${}`;
+
+------------------------------------------------------------------------------------------------------------
+ARRAYS = ["VALOR", "VALOR"];
+
+
+------------------------------------------------------ARRAYS ASOCIATIVOS----------------------------------
+Los arrays asociativos tambien son objetos.
+
+array = {
+    atributo: " ",
+    atributo = " ",
+    atributo = " ",
+
+}
+
+------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------for in--------------------------------------------------
+devuelve la posicion y propiedades.
+mostar= objeto[item]
+
+---------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------for of----------------------------------------------
+muestra el contenido
+--------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------FUNCIONES-------------------------------------------------
+ function name(){
+  return;
+ }
+
+variable = function (){
+return;
+}
+
+------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------FLECHA-------------------------------------------------
+const nombre = (nombre) => {
+
+}
+
+si solo se usa un parametro, no hay necesidad de colocar los parentesis 
+const nombre = nombre => {
+
+}
+
+si solo es una linea de codigo, no hay necedidad de colocar las llaves.
+
+const nombre = (nombre) => linea de codigo
+
+-------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------METODOS DE CADENA----------------------------------------------------
+-startsgith() = si una cadena comienza los caracteres de otra cadena, devuelve true, sino devuelve false.
+-endswith() = si una cadena termina con los caracteres de otra cadena, devuelve true, sino devuelve false.
+-includes() = si una puede encontrarse dentro de otra cadena, devuelve true, sino devuelve false.
+-index0f() = devuelve el indice del primer caracter de la cadena, si no existe, devuelve -1;
+-lastIndexOf() = devuelve ultimo indice del primer caracter de cadena, Si no existe, devuelve -1;
+
+
+-split() =  Divide la cadena los pedazos que queramos
+-substring() - Nos retorna un pedazo de la cadena que seleccinado
+-toLowerCase = Convierte una cadena a minúscula
+-toUpercase() Conivierte una a mayúsculas
+-Tostring() =  metodo  devuelve una cadena que representa al objeto
+-trim() elimina los espacios en blanco al principio y al final
+-trimend() =  elimina los espacios en blanco al final de la cadena
+- trimStar() = elimina los espacion en blanco al inicio de la cadena
+- valueOf() - retorna el valor primitivo de un objeto string
+
+----------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------METODOS DE ARRAYS--------------------------------------------
+
+-------------------------------------------------------transformadores------------------------------------------
+pop() - elimina el último elemento de un array y lo devuelve.
+- shift() elimina el primer elemento de un array y lo devuelve.
+-push() - agrega un elemento al array al final de la lista.
+-reverse() -invierte el orden de los elementos de un array.
+-unshift() - agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array.
+- sort() - ordena los elementos de unarreglo (array) localmente y devuelve el arreglo ordenado.
+-splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
+-----------------------------------------------------------------------------------------------------------------
+
+----------------------------------------Accesores-------------------------------------------------------------
+join() - une todos los elementos de una matriz (u objeto similar) en una cadena y Ia devuelve.
+slice() - devuelve una parte del array dentro de un nuevo arra em ezando or inicio hasta fin fin no incluido
+--------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------De repeticion-----------------------------------------------------
+- filter() - crea un nuevo array con todos los elementos que 
+- forEach() -l ejecuta Ia función indicada una vez por cada elemento
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------CONSOLA--------------------------------------------------------------
+funciones de registro
+- assert() - Aparece un mensaje de error en la consola si la afirmaci&l es falsa. Si la
+afirnación es verdadera, no aparecerá nada. (110 ESTANCNR)
+- clear()= limpia la consola
+- error()= Muestra un •ensaje de error en la cmsola web.
+-info( ) =EMite un mensaje infor•ativo a la web. En Firefox y Chrome, se nuestra un
+pequeño icti10 "i - junto a estos elementos en el registro de la consola web.
+-log() = Muestra un mensaje en la web (o del intérprete JavaScript).
+- table() = Esta función tonaa un argumento (obligatorio: data, que debe ser un array o un
+objeto, y un parámetro: columns y nos muestra una tabla en consola.
+- warn() =imprime un mensaje de advertencia en la web.
+dir() - Despliega una lista interactiva de las propiedades del objeto JavaScript
+especificado. [NO ESTANDAR].
+
+----------------------------------------------------------------------------------------------------------------------
+
+funciones de conteo:
+- count() - Registra el número de veces que se llana a count(). Esta función
+toma como argumento adicional una etiqueta.
+- countReset() - Resetea el contador.F
+
+
+De agrupación.
+- group() - Crea un nuevo grupo en linea en el registro de la consola web 
+- grupEnd() - Renueve un grupo en linea en el regisitro de la consola web 
+- groupcollapsed() - crea un grupo en linea pero contraido, el usuario debe expandir para verlo.
+verlo.
+
+----------------------------------------------------------------------------------------------------------------------
+

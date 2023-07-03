@@ -1,0 +1,8 @@
+-------Estructura de una URL---------------
+-Direccion de un recurso en la wenb
+-localizador uniforme de recurosos 
+-es como una id 
+
+
+protocolo://subdominio/dominion.dominio de nivel superior/path/parametro de ruta /parametro query(no son parte de la URL) 
+TLD = top-level dominion    

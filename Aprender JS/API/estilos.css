@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1d28;
+}
+.header {
+	top: 0;
+  position: sticky;
+  padding: 20px;
+  border-bottom: 1px solid #a9b4d6;
+  background-color: #1a1d28;
+}
+
+.Peliculas {
+  color: #fff;
+  text-align: center;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.contenedor .pelicula {
+  text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.paginacion {
+  position: sticky;
+  bottom: 0;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.paginacion:hover {
+  position: sticky;
+  bottom: 0;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+
+.paginacion button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  background: hsl(257, 100%, 61%);
+  color: #fff;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: 0.3s ease all;
+}
+
+.paginacion button:hover {
+  background: #fc0000;
+}
+h3 {
+  color: #fff;
+}
